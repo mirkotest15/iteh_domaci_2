@@ -17,8 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/hello', function (){
-    return 'Hello World!';
+Route::get('/hello/{id}', function ($id){
+    return 'Hello World!' . $id; 
 });
 
 //Route::get('/products', [Products::class, '']);

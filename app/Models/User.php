@@ -8,6 +8,10 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
+// TODO: Kreirati najmanje 4 migracije različite namena (kreiranje tabele, izmena tabele, ....)
+
+// TODO: Kreirati najmanje 3 modela međusobno povezana (ne koristiti primer sa vežbi)
+
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
