@@ -22,6 +22,7 @@ use App\Models\User;
 // TODO: API treba da sadrži najmanje 3 različita tipa ruta
 // TODO: Kreirati REST API u okviru Laravel aplikacije
 // TODO: REST API treba da vraća podatke u json formatu
+
 Route::post('login', function (Request $request) {
     $user = User::where('email', $request->email)->first();
     if (!$user || !Hash::check($request->password, $user->password)) {
